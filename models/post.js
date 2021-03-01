@@ -4,7 +4,7 @@ const postSchema = new mongoose.Schema({
     title: {
         type: String,
         required: "Title is required",
-        minlenght: 4,
+        minlength: 4,
         maxlenght: 150
     },
 
@@ -13,8 +13,8 @@ const postSchema = new mongoose.Schema({
         required: "Body is required",
         minlenght: 4,
         maxlenght: 2000
-    },
+    }
     
-})
+});
 
 module.exports = mongoose.model("Post", postSchema);
